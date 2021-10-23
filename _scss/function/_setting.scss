@@ -1,6 +1,4 @@
 @charset "utf-8";
-//googleFont
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@400;700&family=Kaushan+Script&family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap");
 
 // カラー
 $cr-main: #0020d8;
@@ -33,8 +31,8 @@ $vw-inner-plain: 1000;
 // ブレークポイント
 $breakpoints: (
   "sp": "(max-width: #{$tab-inner - 1px})",
+  "tab": "(min-width: #{$tab-inner}) and (max-width: #{$layout-inner - 1px})",
   "pc": "(min-width: #{$tab-inner})",
-  "tab-only": "(min-width: #{$tab-inner}) and (max-width: #{$layout-inner - 1px})",
   "pc-only": "(min-width: #{$layout-inner})",
   "vw": "(min-width: #{$tab-inner}) and (max-width: #{$vw-inner})",
 );
@@ -70,13 +68,10 @@ $lh-base: 1.6;
 // フォーム
 $cr-form-bd: #707070;
 $cr-form-bd-active: #001aff;
-
 $cr-check: #707070;
 $cr-check-active: #707070;
-
 $size-checkbox: 26px;
 $size-checkbox-pd-left: 30px;
-
 $size-radio: 26px;
 $size-radio-active: 10px;
 $size-radio-pd-left: 30px;

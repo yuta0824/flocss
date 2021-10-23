@@ -1,10 +1,7 @@
-@use '../function/setting' as *;
-@use '../function/mixin' as *;
+@use '../function' as *;
 
-/* project
-==================================*/
-/* header
-==================================*/
+// header
+//--------------------------
 .header {
   height: $header-height;
   background: $cr-main;

@@ -1,9 +1,5 @@
-@use '../function/setting' as *;
-@use '../function/mixin' as *;
-/* WordPress
-==================================*/
-/* single.php
---------------------------*/
+@use '../function' as *;
+
 .the_content h2 {
   font-weight: 700;
 }

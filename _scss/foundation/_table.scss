@@ -1,8 +1,5 @@
-@use '../function/setting' as *;
-@use '../function/mixin' as *;
+@use '../function' as *;
 
-/* table
-==================================*/
 table {
   border-collapse: collapse;
   border-spacing: 0;
