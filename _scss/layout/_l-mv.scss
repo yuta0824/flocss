@@ -1,0 +1,40 @@
+@use "../function" as *;
+
+.l-mv {
+  margin-top: $header-height;
+  position: relative;
+
+  @include mq("sp") {
+    margin-top: $header-height-sp;
+  }
+}
+
+.l-mv__bg {
+  width: 100%;
+}
+
+.l-mv__inner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+.l-mv__bg img {
+}
+
+.l-mv__head {
+  color: #fff;
+  font-size: 30px;
+}
+
+.l-mv__text {
+  color: #fff;
+  font-size: 30px;
+}
+
+.l-mv__btn {
+  margin-top: 10px;
+}

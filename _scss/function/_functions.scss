@@ -1,0 +1,28 @@
+@use './setting' as *;
+
+//固定値（px）をvwに変換する記述
+//$width = vw幅
+@function vw($px, $width: $layout-width-vw-plain) {
+  @return $px / $width * 100vw;
+}
+
+//paddingやmarginをemで計算
+@function em($padding, $font-size: 16) {
+  @return $padding / $font-size * 1em;
+}
+
+// letter-spacing計算
+@function lsp($letter-spacing, $font-size: 16) {
+  @return $letter-spacing / $font-size * 1em;
+}
+
+// paddingやmarginを%計算
+@function pct($padding, $layout-inner-size: $layout-inner-plain) {
+  //デザインカンプのインナー幅
+  @return percentage($padding / $layout-inner-size);
+}
+
+// 1/2表示
+@function half($value) {
+  @return $value / 2;
+}

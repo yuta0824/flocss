@@ -9,7 +9,7 @@
   background: $cr-accent;
   position: fixed;
   bottom: 30px;
-  font-size: $fz-l;
+  font-size: 22px;
   opacity: 0.6;
   color: #fff;
   right: calc(50% - #{600px - $pd-pc});
@@ -28,7 +28,7 @@
     line-height: 40px;
     right: $pd-sp;
     bottom: 20px;
-    font-size: $fz-m;
+    font-size: 16px;
   }
 
   &.is-show {

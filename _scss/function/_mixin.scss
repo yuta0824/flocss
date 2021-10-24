@@ -7,33 +7,6 @@
   }
 }
 
-//固定値（px）をvwに変換する記述
-//$width = vw幅
-@function vw($px, $width: $vw-inner-plain) {
-  @return $px / $width * 100vw;
-}
-
-//paddingやmarginをemで計算
-@function em($padding, $font-size: 16) {
-  @return $padding / $font-size * 1em;
-}
-
-// letter-spacing計算
-@function lsp($letter-spacing, $font-size: 16) {
-  @return $letter-spacing / $font-size * 1em;
-}
-
-// paddingやmarginを%計算
-@function pct($padding, $layout-inner-size: $layout-inner-plain) {
-  //デザインカンプのインナー幅
-  @return percentage($padding / $layout-inner-size);
-}
-
-// 1/2表示
-@function half($value) {
-  @return $value / 2;
-}
-
 //3点リーダーの記述
 @mixin line-clamp($count: 3) {
   @if $count == 1 {
@@ -208,5 +181,9 @@ $direction: "right-out";
 
 //ホバーアクション
 @mixin hover() {
-  opacity: $opacity;
+  @include mq('hover') {
+    &:hover {
+      opacity: $opacity;
+    }
+  }
 }

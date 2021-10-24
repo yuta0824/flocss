@@ -1,25 +1,27 @@
-@use '../function' as *;
+@use "../function" as *;
 
 .c-btn {
   display: inline-block;
-  padding: 1rem 2rem;
+  padding: 1em 2em;
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 10em;
+  width: 400px;
+  max-width: 100%;
   transition: all 0.3s ease 0s;
 
-  @include mq('pc') {
-    &:hover {
-      opacity: $opacity;
-    }
-  }  
+  @include hover;
 }
 
-.c-btn--sub {
-  background: $cr-accent;
-  color: #fff;
-}
-
-.c-btn--main {
+.c-btn--primary {
+  background: $cr-main;
   color: $cr-main;
-  border: 1px solid $cr-main;
-  border-radius: 25px;
+  border-color: $cr-main;
+}
+
+.c-btn--secondary {
+  background: $cr-accent;
+  color: $cr-accent;
+  border-color: $cr-accent;
 }
 
